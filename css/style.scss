@@ -4,7 +4,23 @@ body {
 }
 
 h1 {
-	color: rgb(4, 4, 153);
 	text-align: center;
-	padding-top: 40vh;
+	padding-top: 10vh;
+}
+
+h3 {
+	text-align: center;
+}
+
+h2 {
+	padding-top: 100px;
+	text-align: center;
+	font-size: 3rem;
+}
+
+footer {
+	position: fixed;
+	bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
 }

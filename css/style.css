@@ -4,8 +4,25 @@ body {
 }
 
 h1 {
-  color: #040499;
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 10vh;
+}
+
+h3 {
+  text-align: center;
+}
+
+h2 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */
