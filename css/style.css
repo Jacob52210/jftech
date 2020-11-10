@@ -1,9 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   color: #040499;
   text-align: center;
-}
-
-body {
-  background-color: blue;
+  padding-top: 40vh;
 }
 /*# sourceMappingURL=style.css.map */
