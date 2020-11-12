@@ -1,0 +1,137 @@
+.contact {
+	height: 100%;
+	padding-top: 25vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: black;
+	//	url(../img/family-pic2.jpg) center top;
+	background-size: cover;
+	text-align: center;
+
+	h2 {
+		position: absolute;
+		top: 50px;
+	}
+
+	.messageMeContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba($primary-color, 0.5);
+		width: fit-content;
+		height: fit-content;
+		margin-top: 20px;
+		padding: 20px;
+
+		.topInputs {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: fit-content;
+			margin: 20px;
+
+			label {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.name {
+				background-color: rgba($primary-color, 0.6);
+				width: 70vw;
+				color: white;
+				padding: 1rem;
+				margin: 10px;
+				border: none;
+				border-bottom: 2px solid $secondary-color;
+
+				&::placeholder {
+					color: white;
+					opacity: 0.7;
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.email {
+				background-color: rgba($primary-color, 0.6);
+				width: 70vw;
+				color: white;
+				padding: 1rem;
+				margin: 10px;
+				border: none;
+				border-bottom: 2px solid $secondary-color;
+
+				&::placeholder {
+					color: white;
+					opacity: 0.7;
+				}
+
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+
+		.messageMe {
+			background-color: rgba($primary-color, 0.6);
+			color: white;
+			padding: 1rem;
+			margin: 10px;
+			border: none;
+			border-bottom: 2px solid $secondary-color;
+			height: 100px;
+			width: 70vw;
+			word-break: break-word;
+
+			&::placeholder {
+				color: white;
+				opacity: 0.7;
+				align-items: center;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.messageMeSubBtn {
+			background: none;
+			border: none;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.fa-paper-plane {
+			cursor: pointer;
+			color: white;
+			margin: auto;
+			margin-top: 10px;
+
+			&:hover {
+				color: $secondary-color;
+				transition: 1s;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 3rem;
+		text-shadow: 8px 2px 8px black;
+		margin-bottom: 2rem;
+	}
+
+	&_list {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		font-size: 1.5rem;
+	}
+}

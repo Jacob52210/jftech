@@ -1,0 +1,118 @@
+.about {
+	padding-bottom: 2rem;
+
+	&_bio-image {
+		height: 30vh;
+		width: 100%;
+		background: linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.6)),
+			url(../img/project-1.jpg) center center;
+		background-size: cover;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		padding-top: 250px;
+
+		p {
+			margin-bottom: 2rem;
+			line-height: 2;
+		}
+	}
+
+	&_bio {
+		width: 80%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.headshot {
+			width: 150px;
+			height: auto;
+			border: 3px solid black;
+			border-radius: 100px;
+		}
+
+		.text-secondary {
+			font-size: 3rem;
+			text-shadow: 8px 2px 8px black;
+			padding: 1rem;
+		}
+	}
+
+	.jobs {
+		width: 60vw;
+		margin: 2rem auto 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+
+		&_job {
+			background: lighten($primary-color, 10%);
+			padding: 0.5rem;
+			border-bottom: 5px solid $secondary-color;
+
+			.skill_topic {
+				margin-bottom: 2rem;
+
+				.html-skills-container {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-evenly;
+					text-align: center;
+
+					.fab {
+						color: white;
+						margin-top: 10px;
+					}
+					h3 {
+						margin-top: 18px;
+
+						b {
+							color: rgb(255, 255, 255);
+						}
+					}
+
+					.logos {
+						width: 28px;
+						height: auto;
+						margin-top: 10px;
+					}
+
+					.mysql {
+						height: 40px;
+						width: auto;
+						margin-top: 6px;
+					}
+				}
+			}
+
+			h2,
+			h3,
+			h6 {
+				text-align: center;
+			}
+
+			h2,
+			h3 {
+				margin: 0.5rem 0;
+			}
+
+			h6 {
+				margin: 0.3rem 0;
+			}
+		}
+	}
+
+	.social-icons {
+		display: flex;
+		flex-direction: column;
+	}
+
+	footer {
+		position: fixed;
+		right: -200px;
+		bottom: 200px;
+		transform: rotate(90deg);
+	}
+}

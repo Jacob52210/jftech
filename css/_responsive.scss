@@ -1,0 +1,153 @@
+@include media-md {
+	.menu-btn {
+		visibility: hidden;
+	}
+
+	.nav {
+		visibility: visible;
+
+		.menu-nav {
+			display: block;
+			transform: translateY(0);
+			height: 100%;
+			text-align: right;
+
+			&_item {
+				display: inline;
+				padding-right: 1rem;
+			}
+
+			&_link {
+				font-size: 1.7rem;
+				font-weight: 400;
+				padding: 1rem 0;
+			}
+		}
+	}
+
+	.home {
+		.name-container {
+			.home_name {
+				font-size: 6rem;
+			}
+			h1 {
+				margin: 0;
+			}
+
+			h2 {
+				font-size: 2rem;
+			}
+
+			&_name {
+				font-size: 7rem;
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.about {
+		h6 {
+			font-size: 1rem;
+		}
+
+		.about_bio-image {
+			.text-secondary {
+				font-size: 4rem;
+			}
+		}
+
+		.jobs_job {
+			.skill_topic {
+				.html-skills-container {
+					.html-skills {
+						.fab {
+							color: white;
+							font-size: 100px;
+							margin-top: 20px;
+						}
+
+						h3 {
+							margin: 0px;
+							margin-top: 5px;
+							b {
+								color: white;
+								font-size: 80px;
+								margin: 0px;
+							}
+						}
+
+						.logos {
+							height: 80px;
+							width: auto;
+							margin-top: 30px;
+						}
+
+						.mysql {
+							height: 80px;
+							width: auto;
+							margin-top: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.projects {
+		&_items {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.text-secondary {
+			font-size: 4rem;
+		}
+	}
+
+	.contact {
+		h2 {
+			font-size: 4rem;
+			top: 100px;
+		}
+
+		.messageMeContainer {
+			width: fit-content;
+
+			.topInputs {
+				display: flex;
+				flex-direction: row;
+
+				.email {
+					width: 250px;
+				}
+
+				.name {
+					width: 250px;
+				}
+			}
+
+			.messageMe {
+				width: 525px;
+			}
+		}
+	}
+
+	.contact_list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@include media-lg {
+	.projects {
+		&_items {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}
+
+@include media-xl {
+	.nav {
+		.menu-nav_item {
+			padding-right: 5rem;
+		}
+	}
+}

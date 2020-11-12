@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/main.css" />
-		<title>JF Technologies</title>
+		<title>Contact Jacob Flora</title>
 	</head>
 	<body>
 		<header>
@@ -14,7 +14,7 @@
 			<!-- Nav Bar -->
 			<nav class="nav">
 				<ul class="menu-nav">
-					<li class="menu-nav_item active">
+					<li class="menu-nav_item">
 						<a href="index.html" class="menu-nav_link">
 							Home
 						</a>
@@ -29,9 +29,9 @@
 							Templates
 						</a>
 					</li>
-					<li class="menu-nav_item">
+					<li class="menu-nav_item active">
 						<a href="contact.html" class="menu-nav_link">
-							Contact Me
+							Contact Us
 						</a>
 					</li>
 				</ul>
@@ -39,21 +39,25 @@
 		</header>
 		<!-- Page Content -->
 		<main>
-			<section class="home">
-				<div class="name-container">
-					<h2>Welcome To</h2>
-					<h1 class="home_name">JF <span class="home_name--last">TECHNOLOGIES</span></h1>
-					<h2>
-						Building Custom and Affordable Websites
-					</h2>
-				</div>
+			<section class="contact">
+				<h2>Contact Us</h2>
+				<form class="messageMeContainer" action="https://formspree.io/f/mdopdazj" method="POST">
+					<div class="topInputs">
+						<label>
+							Name:
+							<input type="text" name="Name" class="name" required />
+						</label>
+						<label>
+							Email:
+							<input type="email" name="Email" class="email" required />
+						</label>
+					</div>
+					<label>Message:</label>
+					<textarea type="text" class="messageMe" name="Message" required></textarea>
+					<button type="submit" class="messageMeSubBtn"><i type="submit" class="fas fa-paper-plane fa-2x"></i></button>
+				</form>
 
 				<footer>&copy; 2020 JF Technologies - All Rights Reserved</footer>
-
-				<video autoplay loop muted>
-					<!-- Insert Video Here -->
-					<source class="vid" src="" type="video/mp4" alt="Digital Spinning Earth" />
-				</video>
 			</section>
 		</main>
 
