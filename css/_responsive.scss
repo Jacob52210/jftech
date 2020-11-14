@@ -10,7 +10,7 @@
 			display: block;
 			transform: translateY(0);
 			height: 100%;
-			text-align: right;
+			text-align: center;
 
 			&_item {
 				display: inline;
@@ -41,6 +41,10 @@
 			&_name {
 				font-size: 7rem;
 				padding-bottom: 0;
+			}
+
+			.home_name--last {
+				font-size: 3rem;
 			}
 		}
 	}
