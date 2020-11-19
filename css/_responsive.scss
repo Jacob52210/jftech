@@ -27,6 +27,11 @@
 
 	.home {
 		.name-container {
+			img {
+				width: 60vw;
+				height: auto;
+			}
+
 			.home_name {
 				font-size: 6rem;
 			}
@@ -141,6 +146,14 @@
 }
 
 @include media-lg {
+	.home {
+		.name-container {
+			img {
+				width: 40vw;
+				height: auto;
+			}
+		}
+	}
 	.projects {
 		&_items {
 			grid-template-columns: repeat(3, 1fr);
